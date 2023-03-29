@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fishing World</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/store/products">Productos</a></li>
+                <li><a href="/store/contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Derechos reservados - Fishing World</p>
+        <p>Teléfono: +543413768372</p>
+        <p>Email: <a href="mailto:{{ email }}">isaias49@hotmail.com</a></p>
+        <p>Dirección: Rosario/ARGENTINA</p>
+    </footer>
+</body>
+</html>
